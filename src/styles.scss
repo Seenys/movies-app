@@ -1,8 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
 @import './styles/init-css';
+//fonts
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,400;1,700;1,900&display=swap');
-@import "~primeflex/primeflex.css";
+//primeflex
+@import '~primeflex/primeflex.css';
+//colors
+@import './styles/colors';
 
 body {
   font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: $white;
+  background-color: $bgColorLight;
+}
+
+a {
+  color: $white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  &:hover {
+    color: $primary;
+  }
 }
